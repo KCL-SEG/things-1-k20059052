@@ -6,4 +6,4 @@ class Thing(models.Model):
 
     description = models.CharField( unique = False, blank = True, max_length = 120)
 
-    quantity = models.PositiveIntegerField(default=0, validators=[MinValueValidator(1), MaxValueValidator(100)])
+    quantity = models.PositiveIntegerField(default=0, validators=[MinValueValidator(0), MaxValueValidator(100)])
